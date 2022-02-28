@@ -11,8 +11,8 @@ import Form from './components/form/Form'
 
 import './App.scss';
 
-
- 
+  
+  
 function App() {
   
   return (
