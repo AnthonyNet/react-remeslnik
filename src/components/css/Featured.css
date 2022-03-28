@@ -55,7 +55,7 @@
 }
 
 .featured .coverLeft {
-      grid-template-areas: "one two three" "one four five";
+      grid-template-areas: "one two three" "one four five";
   -ms-grid-columns: 1fr 20% 20%;
       grid-template-columns: 1fr 20% 20%;
   -ms-grid-rows: 1fr 50%;
@@ -63,7 +63,7 @@
 }
 
 .featured .coverRight {
-      grid-template-areas: "oneR twoR threeR" "fourR fiveR threeR";
+      grid-template-areas: "oneR twoR threeR" "fourR fiveR threeR";
   -ms-grid-columns: 20% 20% 1fr;
       grid-template-columns: 20% 20% 1fr;
   -ms-grid-rows: 1fr 50%;
@@ -179,7 +179,7 @@
 @media screen and (max-width: 906px) {
   .featured .coverLeft,
   .featured .coverRight {
-        grid-template-areas: "one one" "two three" "four five";
+        grid-template-areas: "one one" "two three" "four five";
     -ms-grid-columns: 50% 1fr;
         grid-template-columns: 50% 1fr;
     -ms-grid-rows: 50% 1fr 1fr;

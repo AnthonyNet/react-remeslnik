@@ -166,8 +166,6 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    -webkit-animation: moveInLeft 1s ease;
-            animation: moveInLeft 1s ease;
     background-color: white;
     -webkit-transition: .6s ease-in-out;
     transition: .6s ease-in-out;
@@ -185,6 +183,15 @@
   }
   .navbar .active li a {
     font-size: 3vh;
+  }
+}
+
+@media screen and (max-width: 601px) {
+  .navbar .nav-menu li {
+    border: none;
+  }
+  .navbar .nav-menu li:first-child {
+    margin-top: 12vh;
   }
 }
 

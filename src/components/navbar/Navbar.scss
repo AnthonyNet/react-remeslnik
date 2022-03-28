@@ -148,6 +148,9 @@
         border:  none;
         }
         
+        .navbar .nav-menu li:first-child {
+            margin-top: 12vh;
+        }
     }
 
     @media screen and(max-width: 450px){
