@@ -22,7 +22,7 @@ const Featured = () => {
     
      <div className='container'>
      
-          <h1>Nejlepší reklama je dobře odvedená práce </h1>
+          <h1>Nejlepší reklama je dobře odvedená práce</h1>
           <h2>Fasády</h2>
               <Bounce>
               <div className="coverLeft">
