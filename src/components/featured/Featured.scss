@@ -1,0 +1,158 @@
+@import '../general.scss';
+
+.featured .coverLeft,
+.featured .coverRight{
+    
+    display: grid;
+    
+    grid-gap: 1rem;
+    /*
+    max-height: 50vh;
+    min-height: 50vh;*/
+    margin-bottom: 100px;
+    
+}    
+.featured h1{
+    margin: 5vh 0;
+    font-size: 3rem;
+}
+
+.featured h2{
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.featured .coverLeft{
+    grid-template-areas: 
+    "one two three"
+    "one four five";
+    grid-template-columns: 1fr 20% 20%;
+    grid-template-rows: 1fr 50%;
+ 
+}
+
+.featured .coverRight{
+    grid-template-areas: 
+        "oneR twoR threeR"
+        "fourR fiveR threeR";
+    grid-template-columns: 20% 20% 1fr;  
+    grid-template-rows: 1fr 50% ;
+}
+  
+.coverLeft div,
+.coverRight div{
+    //border: 1px solid red; 
+    width: 100%;
+    height: 100%;
+}
+
+.coverLeft .bigImg{
+    grid-area: one;
+   
+}
+
+.coverRight .bigImg{
+    grid-area: threeR;
+}
+
+.bigImg img{
+    min-height: 50vh;
+    max-height: 50vh;
+    transform: scale(1.1);
+}
+
+
+.container .coverLeft div:nth-child(2),
+.container .coverLeft div:nth-child(3),
+.container .coverLeft div:nth-child(4),
+.container .coverLeft div:nth-child(5),
+.container .coverRight div:nth-child(1),
+.container .coverRight div:nth-child(2),
+.container .coverRight div:nth-child(4),
+.container .coverRight div:nth-child(5)
+{
+height:  24vh;
+}
+
+.coverLeft div,
+.coverRight div{
+    position: relative;
+    overflow: hidden;
+    @include shadow;
+    
+
+    & img{
+        width: 100%;
+        height: 101%;
+        object-fit: cover;
+
+        opacity: 1;
+        scale: 1;    
+       
+     }
+    & .hoverText{
+        position: absolute;
+        top: 85%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        scale: 1.5;
+        z-index: -1;
+       }
+
+    &:before{
+        opacity: 0;
+    }   
+    &:after{
+        opacity:1;
+    }
+    &:hover{
+    cursor: pointer;
+    overflow: hidden;
+   @include shadowHero;
+    transition: .6s ease;
+        & img{
+        transform: scale(1.3);
+        opacity: 0.8;
+        transition: 700ms ease-in-out;
+        
+        }
+   
+    }
+     
+}
+ 
+   .coverLeft div:hover .hoverText,
+   .coverRight div:hover .hoverText{
+       z-index: 5;
+       transition: 1000ms ease-in-out;
+       scale: 1;
+   }
+
+
+
+
+@media screen and (max-width: 906px) {
+    
+  .featured .coverLeft,
+  .featured .coverRight{
+      
+    grid-template-areas: 
+    "one one"
+    "two three"
+    "four five";
+    grid-template-columns: 50% 1fr;  
+    grid-template-rows: 50% 1fr 1fr ;
+    //padding: 1vh 1rem;
+    //margin-bottom: 20px;
+   }
+
+  
+   .coverRight .bigImg{
+       grid-area: one;
+   }
+
+
+}
+
+
