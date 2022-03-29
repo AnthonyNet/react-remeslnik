@@ -27,21 +27,21 @@ const Featured = () => {
               <Bounce>
               <div className="coverLeft">
                   <div className="bigImg"> <img  src={House1} alt='' /><h1 className='hoverText'>Fasáda Trnava</h1></div>
-                  <div> <img  src={House2} alt='' /></div>
-                  <div> <img  src={House3} alt='' /></div>
-                  <div> <img  src={House4} alt='' /></div>
-                  <div> <img  src={House5} alt='' /></div>
+                  <div class="smallImg"> <img  src={House2} alt='' /></div>
+                  <div class="smallImg"> <img  src={House3} alt='' /></div>
+                  <div class="smallImg"> <img  src={House4} alt='' /></div>
+                  <div class="smallImg"> <img  src={House5} alt='' /></div>
                </div> 
+
               </Bounce>
-              
               <Bounce>
               <h2>Obklady</h2>
                  <div className="coverRight">
-                  <div> <img  src={House7} alt='' /></div>
-                  <div> <img  src={House8} alt='' /></div>
+                  <div class="smallImg"> <img  src={House7} alt='' /></div>
+                  <div class="smallImg"> <img  src={House8} alt='' /></div>
                   <div className="bigImg"> <img  src={House6} alt='' /><h1 className='hoverText'>Obklad Rudíkov</h1></div>
-                  <div> <img  src={House9} alt='' /></div>
-                  <div> <img  src={House10} alt='' /></div>
+                  <div class="smallImg"> <img  src={House9} alt='' /></div>
+                  <div class="smallImg"> <img  src={House10} alt='' /></div>
                </div>  
               </Bounce>
                        

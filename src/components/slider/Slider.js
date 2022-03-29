@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import Zoom from 'react-reveal/Zoom';
+
 import './Slider.scss'
 
 
@@ -113,7 +113,7 @@ const Slider = () => {
           
 
         <div className="gallery-tabs">
-          <Zoom>
+         
           <div className={toggleState === 1 ? 'gallery activeS' : 'gallery'}>
 
             <span> <img src={House1} alt="" /></span>
@@ -136,10 +136,10 @@ const Slider = () => {
             <span> <img src={House18} alt="" /></span>
 
             </div>
-          </Zoom>
+          
 
 
-        <Zoom>
+       
         <div className={toggleState === 2 ? 'gallery activeS' : 'gallery'}>
            
            <span> <img src={Obklad1} alt="" /></span>
@@ -151,9 +151,9 @@ const Slider = () => {
            <span> <img src={Obklad7} alt="" /></span>
 
         </div>
-        </Zoom>
+        
 
-           <Zoom>
+          
            <div  className={toggleState === 3 ? 'gallery activeS' : 'gallery'}>
                 <span> <img src={Koupelna1} alt="" /></span>
                 <span> <img src={Koupelna2} alt="" /></span>
@@ -162,9 +162,9 @@ const Slider = () => {
                 <span> <img src={Koupelna5} alt="" /></span>
                 <span> <img src={Koupelna6} alt="" /></span>
             </div>
-           </Zoom>
+           
 
-          <Zoom>
+         
           <div  className={toggleState === 4 ? 'gallery activeS' : 'gallery'}>
             <span> <img src={Kuchyn1} alt="" /></span>
             <span> <img src={Kuchyn2} alt="" /></span>
@@ -174,8 +174,8 @@ const Slider = () => {
             <span> <img src={Kuchyn6} alt="" /></span>
 
             </div>
-          </Zoom>
-           <Zoom>
+          
+          
            <div  className={toggleState === 5 ? 'gallery activeS' : 'gallery'}>
                 <span> <img src={Ostatni1} alt="" /></span>
                 <span> <img src={Ostatni2} alt="" /></span>
@@ -200,7 +200,7 @@ const Slider = () => {
                 <span> <img src={Ostatni21} alt="" /></span>
                 
             </div>
-           </Zoom>
+           
          </div>
         </div>
      

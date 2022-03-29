@@ -94,9 +94,9 @@ a{
     .container ul li{
        
         text-align: right;
-        width: 50%;
+        width: 100%;
         text-align: center;
-        color: aqua;
+        padding: 1rem;
         font-size: 7vw;
     }
 
@@ -109,6 +109,28 @@ a{
         & img{
             min-height: 40vh;
             max-height: 50vh;
+        }
+    }
+}
+
+@media only screen and (max-height: 800px) {
+
+    .activeS span{
+        width: 45vw;
+        & img{
+            min-height: 45vh;
+            max-height: 45vh;
+        }
+    }
+}
+
+@media only screen and (max-height: 500px) {
+
+    .activeS span{
+        width: 45vw;
+        & img{
+            min-height: 70vh;
+            max-height: 70vh;
         }
     }
 }

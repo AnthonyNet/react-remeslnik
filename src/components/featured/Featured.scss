@@ -161,3 +161,34 @@ height:  24vh;
 }
 
 
+@media only screen and (max-height: 750px) {
+
+    .featured .coverLeft,
+    .featured .coverRight{
+        grid-template-areas:
+        "one"
+
+        ;
+        grid-template-columns:  1fr;
+      
+
+    }
+
+  .container .smallImg
+    {
+    
+    min-height: 50vh;
+    max-height: 50vh;
+    }
+
+}
+
+@media only screen and (max-height: 550px) {
+    .container .smallImg,
+    .bigImg img
+    {
+    
+    min-height: 90vh;
+    max-height: 90vh;
+    }
+}
