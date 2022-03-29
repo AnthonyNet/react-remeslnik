@@ -32,8 +32,8 @@ const Featured = () => {
                   <div> <img  src={House4} alt='' /></div>
                   <div> <img  src={House5} alt='' /></div>
                </div> 
-
               </Bounce>
+              
               <Bounce>
               <h2>Obklady</h2>
                  <div className="coverRight">

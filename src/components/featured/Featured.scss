@@ -17,6 +17,7 @@
     font-size: 3rem;
 }
 
+
 .featured h2{
     text-align: center;
     font-size: 2rem;
@@ -29,7 +30,6 @@
     "one four five";
     grid-template-columns: 1fr 20% 20%;
     grid-template-rows: 1fr 50%;
- 
 }
 
 .featured .coverRight{
@@ -129,6 +129,11 @@ height:  24vh;
        scale: 1;
    }
 
+   @media screen and (max-width: 1265px) {
+       .bigImg h1{
+        font-size: 3vw;
+       }
+   }
 
 
 
@@ -136,7 +141,7 @@ height:  24vh;
     
   .featured .coverLeft,
   .featured .coverRight{
-      
+    padding: 1rem; 
     grid-template-areas: 
     "one one"
     "two three"

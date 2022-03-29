@@ -21,9 +21,9 @@ const Navbar = () => {
             <h1><span><BsFillHouseFill />JanMarek </span>Zednictví</h1>
             <ul className={click ? 'nav-menu active' : 'nav-menu'}>
             
-                <li><a href="#a">Domů</a></li>
-                <li><a href="#a">Hotová díla</a></li>
-                <li><a href="#a">Kontakt</a></li>
+                <li onClick={handleClick}><a href="#a">Domů</a></li>
+                <li onClick={handleClick}><a href="#a">Hotová díla</a></li>
+                <li onClick={handleClick}><a href="#a">Kontakt</a></li>
                 
             </ul>
         
