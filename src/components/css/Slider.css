@@ -134,11 +134,10 @@ a {
             justify-content: space-between;
   }
   .container ul li {
-    border: 1px solid red;
     text-align: right;
-    width: 50%;
+    width: 100%;
     text-align: center;
-    color: aqua;
+    padding: 1rem;
     font-size: 7vw;
   }
   .container ul li:last-child {
@@ -150,5 +149,25 @@ a {
   .activeS span img {
     min-height: 40vh;
     max-height: 50vh;
+  }
+}
+
+@media only screen and (min-height: 800px) {
+  .activeS span {
+    width: 45vw;
+  }
+  .activeS span img {
+    min-height: 45vh;
+    max-height: 45vh;
+  }
+}
+
+@media only screen and (max-height: 500px) {
+  .activeS span {
+    width: 45vw;
+  }
+  .activeS span img {
+    min-height: 70vh;
+    max-height: 70vh;
   }
 }

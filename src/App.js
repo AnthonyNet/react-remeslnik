@@ -21,12 +21,12 @@ function App() {
      <Footer />
       */}  
       
-    
       <Navbar />
       <Hero />
       <Featured /> 
       <Slider />
      <Footer />
+    
     
      
       
