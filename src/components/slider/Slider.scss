@@ -113,7 +113,7 @@ a{
     }
 }
 
-@media only screen and (min-height: 800px) {
+@media only screen and (max-height: 800px) {
 
     .activeS span{
         width: 45vw;
