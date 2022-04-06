@@ -26,22 +26,22 @@ const Featured = () => {
           <h2>Fasády</h2>
               <Bounce>
               <div className="coverLeft">
-                  <div className="bigImg"> <img  src={House1} alt='' /><h1 className='hoverText'>Fasáda Trnava</h1></div>
-                  <div class="smallImg"> <img  src={House2} alt='' /></div>
-                  <div class="smallImg"> <img  src={House3} alt='' /></div>
-                  <div class="smallImg"> <img  src={House4} alt='' /></div>
-                  <div class="smallImg"> <img  src={House5} alt='' /></div>
+                  <div className="bigImg item-1"> <img  src={House1} alt='' /></div>
+                  <div className="smallImg item-2"> <img  src={House2} alt='' /></div>
+                  <div className="smallImg item-3"> <img  src={House3} alt='' /></div>
+                  <div className="smallImg item-4"> <img  src={House4} alt='' /></div>
+                  <div className="smallImg item-5"> <img  src={House5} alt='' /></div>
                </div> 
 
               </Bounce>
               <Bounce>
               <h2>Obklady</h2>
                  <div className="coverRight">
-                  <div class="smallImg"> <img  src={House7} alt='' /></div>
-                  <div class="smallImg"> <img  src={House8} alt='' /></div>
-                  <div className="bigImg"> <img  src={House6} alt='' /><h1 className='hoverText'>Obklad Rudíkov</h1></div>
-                  <div class="smallImg"> <img  src={House9} alt='' /></div>
-                  <div class="smallImg"> <img  src={House10} alt='' /></div>
+                  <div className="smallImg item-3"> <img  src={House7} alt='' /></div>
+                  <div className="smallImg item-2 "> <img  src={House8} alt='' /></div>
+                  <div className="bigImg item-1"> <img  src={House6} alt='' /></div>
+                  <div className="smallImg item-4"> <img  src={House9} alt='' /></div>
+                  <div className="smallImg item-5"> <img  src={House10} alt='' /></div>
                </div>  
               </Bounce>
                        

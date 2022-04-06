@@ -8,6 +8,8 @@ import Footer from './components/footer/Footer'
 
 import './App.scss';
 
+
+
 function App() {
   
   return (
@@ -27,9 +29,6 @@ function App() {
       <Slider />
      <Footer />
     
-    
-     
-      
     </div>
   );
 }
