@@ -18,7 +18,7 @@ import House10 from '../../assets/fasady-obklady/10.jpg'
 
 const Featured = () => {
   return (
-    <div className='featured'>
+    <div className='featured' id='featured'>
     
      <div className='container'>
      

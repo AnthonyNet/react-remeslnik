@@ -1,4 +1,5 @@
 import React, {useState} from 'react'
+import {Link} from 'react-scroll';
 import {BsFillHouseFill} from 'react-icons/bs'
 import {HiOutlineMenuAlt4} from 'react-icons/hi'
 import {FaRegTimesCircle} from 'react-icons/fa'
@@ -12,7 +13,7 @@ const Navbar = () => {
     const handleClick = () => setClick(!click)
 
  { const bodyEl = document.body;
- click ?  bodyEl.style.overflow = "hidden" :  bodyEl.style.overflow = "scroll";
+ 'nav-menu active' ?  bodyEl.style.overflow = "scroll" :  bodyEl.style.overflow = "hidden";
 }
 
   return (
@@ -21,9 +22,9 @@ const Navbar = () => {
             <h1><span><BsFillHouseFill />JanMarek </span>Zednictví</h1>
             <ul className={click ? 'nav-menu active' : 'nav-menu'}>
             
-                <li onClick={handleClick}><a href="#a">Domů</a></li>
-                <li onClick={handleClick}><a href="#a">Hotová díla</a></li>
-                <li onClick={handleClick}><a href="#a">Kontakt</a></li>
+                <li><Link onClick={handleClick} >Domů</Link></li>
+                <li><Link onClick={handleClick} to="featured" smooth={true} offset={50} duration={500}>Hotová díla</Link></li>
+                <li><Link onClick={handleClick} to="slider" smooth={true} offset={50} duration={500}>Galerie</Link></li>
                 
             </ul>
         

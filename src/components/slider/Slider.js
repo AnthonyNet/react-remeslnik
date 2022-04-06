@@ -98,7 +98,7 @@ const Slider = () => {
 
     
   return (
-    <div>
+    <div id='slider'>
 
         <div className="container containerSlider">
             
