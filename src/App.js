@@ -3,6 +3,7 @@ import Navbar from './components/navbar/Navbar'
 import Hero from './components/hero/Hero'
 import Featured from './components/featured/Featured'
 import Slider from './components/slider/Slider'
+import Swiper from './components/swiper/Swiper'
 
 import Footer from './components/footer/Footer'
 
@@ -20,6 +21,7 @@ function App() {
       <Hero />
       <Featured /> 
       <Slider />
+      <Swiper />
      <Footer />
       */}  
       
@@ -27,6 +29,7 @@ function App() {
       <Hero />
       <Featured /> 
       <Slider />
+      
      <Footer />
     
     </div>
