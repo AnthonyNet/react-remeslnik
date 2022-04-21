@@ -13,7 +13,7 @@ const Navbar = () => {
     const handleClick = () => setClick(!click)
 
  { const bodyEl = document.body;
- 'nav-menu active' ?  bodyEl.style.overflow = "scroll" :  bodyEl.style.overflow = "hidden";
+  !click  ?  bodyEl.style.overflow = "scroll" :  bodyEl.style.overflow = "hidden";
 }
 
   return (

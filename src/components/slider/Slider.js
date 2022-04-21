@@ -75,7 +75,7 @@ import Ostatni21 from '../../assets/ostatni/21.jpg'
 const Slider = () => {
 
     const imagesAll = document.querySelectorAll('.gallery-tabs img');
-    console.log(imagesAll);
+    //console.log(imagesAll);
     
     imagesAll.forEach(image=>{
     image.addEventListener('mouseenter', function(){
