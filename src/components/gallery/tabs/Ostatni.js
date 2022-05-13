@@ -1,3 +1,4 @@
+
 import React from 'react'
 import{useState} from 'react';
 import {Swiper, SwiperSlide} from 'swiper/react'
@@ -5,27 +6,35 @@ import { Navigation, EffectFade } from 'swiper'
 import 'swiper/css/navigation'
 import 'swiper/css/effect-fade'
 
-import Kuchyn1 from '../../assets/kuchyne/1.jpg'
-import Kuchyn2 from '../../assets/kuchyne/2.jpg'
-import Kuchyn3 from '../../assets/kuchyne/3.jpg'
-import Kuchyn4 from '../../assets/kuchyne/4.jpg'
-import Kuchyn5 from '../../assets/kuchyne/5.jpg'
-import Kuchyn6 from '../../assets/kuchyne/6.jpg'
-
 import 'swiper/css'
-import styles from './Swiper.scss'
+import styles from '../Gallery.scss'
 
 
 const Gallery = () => {
 
-  const kitchens = [
-    '../../assets/kuchyne/1.jpg',
-    '../../assets/kuchyne/2.jpg',
-    '../../assets/kuchyne/3.jpg',
-    '../../assets/kuchyne/4.jpg',
-    '../../assets/kuchyne/5.jpg',
-    '../../assets/kuchyne/6.jpg'
-  ]
+    const ostatni = [
+        '../../assets/ostatni/1.jpg',
+    '../../assets/ostatni/2.jpg',
+    '../../assets/ostatni/3.jpg',
+    '../../assets/ostatni/4.jpg',
+    '../../assets/ostatni/5.jpg',
+    '../../assets/ostatni/6.jpg',
+    '../../assets/ostatni/7.jpg',
+    '../../assets/ostatni/8.jpg',
+    '../../assets/ostatni/9.jpg',
+     '../../assets/ostatni/10.jpg',
+     '../../assets/ostatni/11.jpg',
+     '../../assets/ostatni/12.jpg',
+     '../../assets/ostatni/13.jpg',
+     '../../assets/ostatni/14.jpg',
+     '../../assets/ostatni/15.jpg',
+     '../../assets/ostatni/16.jpg',
+     '../../assets/ostatni/17.jpg',
+     '../../assets/ostatni/18.jpg',
+     '../../assets/ostatni/19.jpg',
+     '../../assets/ostatni/20.jpg',
+     '../../assets/ostatni/21.jpg'
+    ]
 
 
 
@@ -42,10 +51,10 @@ const Gallery = () => {
         >        
           
      {
-      kitchens.map((kitchen,index)=>{
+      ostatni.map((item,index)=>{
         return(
           <SwiperSlide className={styles.swiperslide}>
-        <span className='img-cover'><img className='img' src={kitchen} /></span>
+        <span className='img-cover'><img className='img' src={item} /></span>
         </SwiperSlide> 
         )
        })

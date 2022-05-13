@@ -1,6 +1,7 @@
 import React, {useState} from 'react'
+import Swiper from '../gallery/tabs/Koupelny'
 
-import './Slider.scss'
+import './Gallery.scss'
 
 
 import House1 from '../../assets/fasady-obklady/1.jpg'
@@ -44,7 +45,7 @@ import Kuchyn2 from '../../assets/kuchyne/2.jpg'
 import Kuchyn3 from '../../assets/kuchyne/3.jpg'
 import Kuchyn4 from '../../assets/kuchyne/4.jpg'
 import Kuchyn5 from '../../assets/kuchyne/5.jpg'
-//import Kuchyn6 from '../../assets/kuchyne/6.jpg'
+/*import Kuchyn6 from '../../assets/kuchyne/6.jpg'*/
 
 import Ostatni1 from '../../assets/ostatni/1.jpg'
 import Ostatni2 from '../../assets/ostatni/2.jpg'
@@ -76,7 +77,8 @@ const Slider = () => {
 
     const imagesAll = document.querySelectorAll('.gallery-tabs img');
     //console.log(imagesAll);
-    
+
+    /*
     imagesAll.forEach(image=>{
     image.addEventListener('mouseenter', function(){
         image.classList.remove('normal')
@@ -87,13 +89,13 @@ const Slider = () => {
         image.classList.remove('show')
         image.classList.add('normal')
     })
-    })
+    })*/
     
     
     const [toggleState, setToggleState] = useState(1);
 
-    const toggleTab = (index) => {
-        setToggleState(index)
+    const toggleTab = (numb) => {
+        setToggleState(numb)
     }
 
     
@@ -116,24 +118,7 @@ const Slider = () => {
          
           <div className={toggleState === 1 ? 'gallery activeS' : 'gallery'}>
 
-            <span> <img src={House1} alt="" /></span>
-            <span> <img src={House2} alt="" /></span>
-            <span> <img src={House3} alt="" /></span>
-            <span> <img src={House4} alt="" /></span>
-            <span> <img src={House5} alt="" /></span>
-            <span> <img src={House6} alt="" /></span>
-            <span> <img src={House7} alt="" /></span>
-            <span> <img src={House8} alt="" /></span>
-            <span> <img src={House9} alt="" /></span>
-            <span> <img src={House10} alt="" /></span>
-            <span> <img src={House11} alt="" /></span>
-            <span> <img src={House12} alt="" /></span>
-            <span> <img src={House13} alt="" /></span>
-            <span> <img src={House14} alt="" /></span>
-            <span> <img src={House15} alt="" /></span>
-            <span> <img src={House16} alt="" /></span>
-            <span> <img src={House17} alt="" /></span>
-            <span> <img src={House18} alt="" /></span>
+            <Swiper />
 
             </div>
           
@@ -155,6 +140,7 @@ const Slider = () => {
 
           
            <div  className={toggleState === 3 ? 'gallery activeS' : 'gallery'}>
+           
                 <span> <img src={Koupelna1} alt="" /></span>
                 <span> <img src={Koupelna2} alt="" /></span>
                 <span> <img src={Koupelna3} alt="" /></span>

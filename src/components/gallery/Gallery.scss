@@ -1,13 +1,4 @@
 @import '../general.scss';
-
-/*
-
-a{
-    color: white;
-}
-
-
-
 .containerSlider ul{
     
     display: flex;
@@ -29,8 +20,7 @@ a{
 
 .gallery{
     display: none;
-    width: 80vw;
-    height: 100vh;
+    width: 100%;
 }
 
 .activeS{
@@ -40,28 +30,83 @@ a{
 
 
 .activeS span{
-  
-    background-color: rgba(44, 38, 38, 0); 
-    width: 23%;
+    background-color: rgba(44, 38, 38, 0);
     overflow: hidden;
-    
-    
-    @include shadow;
     & img{
-        
-        width: 100%;
-        min-height: 24vh;
-        max-height: 24vh;
         transform: scale(1);
-        overflow: hidden;
         transition: .4s ease-in-out;
-        border: 3px solid white;
-        @include shadow;
         &:hover{
             transform: scale(1.2);
         }
     } 
 }
+
+a{
+    color: white;
+}
+
+.gallery{
+    display: none;
+}
+
+.activeS{
+    display: block;
+}
+
+/*¨
+TABS
+*/
+
+.swiper-slide{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    height: 70vh;
+   
+}
+.img-cover{
+    max-width: 100%;
+    max-height: 100%;
+    border: 3px inset white;
+}
+.img{
+   height: 100%;
+   width: 100%; 
+   object-fit:cover ;
+   
+}
+
+@media only screen and (max-width: 980px) {
+    .containerSlider ul{
+        font-size: 2.8vw;
+    }
+
+    .hero h1{
+        font-size: 9.5vw;
+    }
+
+    .container h1,
+    .hero p{
+        font-size: 4vw;
+    }
+
+    .containerSlider ul li{
+       
+        justify-content: space-between;
+    }
+
+    .activeS span{
+        width: 45vw;
+        & img{
+            min-height: 30vh;
+            max-height: 30vh;
+        }
+    }
+}
+
+
 
 @media only screen and (max-width: 980px) {
     .containerSlider ul{
@@ -142,4 +187,4 @@ a{
             max-height: 70vh;
         }
     }
-}*/
+}

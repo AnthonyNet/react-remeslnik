@@ -2,9 +2,9 @@ import React from 'react'
 import Navbar from './components/navbar/Navbar'
 import Hero from './components/hero/Hero'
 import Featured from './components/featured/Featured'
-import Slider from './components/slider/Slider'
-import Swiper from './components/swiper/Swiper'
-import Pokus from './components/pokus/Slider'
+
+import Swiper from './components/gallery/tabs/Koupelny'
+import Gallery from './components/gallery/Gallery'
 import Footer from './components/footer/Footer'
 
 import './App.scss';
@@ -24,9 +24,11 @@ function App() {
       <Swiper />
      <Footer />
       */}  
-      
-      <Pokus />
-    
+      <Navbar />
+      <Hero />
+      <Featured /> 
+      <Gallery />
+      <Footer />
      
     
     </div>
