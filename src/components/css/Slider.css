@@ -1,61 +1,42 @@
 @-webkit-keyframes moveInLeft {
   0% {
     opacity: 0;
-    -webkit-transform: translateX(-100px);
-            transform: translateX(-100px);
+    transform: translateX(-100px);
   }
   80% {
-    -webkit-transform: translateX(10px);
-            transform: translateX(10px);
+    transform: translateX(10px);
   }
   100% {
     opacity: 1;
-    -webkit-transform: translate(0);
-            transform: translate(0);
+    transform: translate(0);
   }
 }
-
 @keyframes moveInLeft {
   0% {
     opacity: 0;
-    -webkit-transform: translateX(-100px);
-            transform: translateX(-100px);
+    transform: translateX(-100px);
   }
   80% {
-    -webkit-transform: translateX(10px);
-            transform: translateX(10px);
+    transform: translateX(10px);
   }
   100% {
     opacity: 1;
-    -webkit-transform: translate(0);
-            transform: translate(0);
+    transform: translate(0);
   }
 }
-
-a {
-  color: white;
-}
-
 .containerSlider ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   font-size: 2rem;
   padding: 5vw 1vw;
 }
 
 .containerSlider ul li {
   cursor: pointer;
-  -webkit-transition: .4s ease;
-  transition: .4s ease;
+  transition: 0.4s ease;
 }
-
 .containerSlider ul li:hover {
-  -webkit-transform: rotateZ(15deg);
-          transform: rotateZ(15deg);
+  transform: rotateZ(15deg);
 }
 
 .gallery {
@@ -64,55 +45,59 @@ a {
 }
 
 .activeS {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  gap: 1rem;
 }
 
 .activeS span {
   background-color: rgba(44, 38, 38, 0);
-  width: 23%;
   overflow: hidden;
   box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
 }
-
 .activeS span img {
-  width: 100%;
-  min-height: 24vh;
-  max-height: 24vh;
-  -webkit-transform: scale(1);
-          transform: scale(1);
+  transform: scale(1);
   overflow: hidden;
-  -webkit-transition: .4s ease-in-out;
-  transition: .4s ease-in-out;
+  transition: 0.4s ease-in-out;
   border: 3px solid white;
   box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
 }
-
 .activeS span img:hover {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+a {
+  color: white;
+}
+
+.gallery {
+  display: none;
+}
+
+.activeS {
+  display: block;
 }
 
 @media only screen and (max-width: 980px) {
   .containerSlider ul {
     font-size: 2.8vw;
   }
-  .containerSlider ul li {
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+
+  .hero h1 {
+    font-size: 9.5vw;
   }
+
+  .container h1,
+.hero p {
+    font-size: 4vw;
+  }
+
+  .containerSlider ul li {
+    justify-content: space-between;
+  }
+
   .activeS span {
     width: 45vw;
   }
@@ -121,18 +106,39 @@ a {
     max-height: 30vh;
   }
 }
+@media only screen and (max-width: 980px) {
+  .containerSlider ul {
+    font-size: 2.8vw;
+  }
 
+  .hero h1 {
+    font-size: 9.5vw;
+  }
+
+  .container h1,
+.hero p {
+    font-size: 4vw;
+  }
+
+  .containerSlider ul li {
+    justify-content: space-between;
+  }
+
+  .activeS span {
+    width: 45vw;
+  }
+  .activeS span img {
+    min-height: 30vh;
+    max-height: 30vh;
+  }
+}
 @media only screen and (max-width: 600px) {
   .containerSlider ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
+
   .container ul li {
     text-align: right;
     width: 100%;
@@ -140,9 +146,11 @@ a {
     padding: 1rem;
     font-size: 7vw;
   }
+
   .container ul li:last-child {
     width: 100%;
   }
+
   .activeS span {
     width: 90vw;
   }
@@ -151,17 +159,12 @@ a {
     max-height: 50vh;
   }
 }
-
-@media only screen and (min-height: 800px) {
-  .activeS span {
-    width: 45vw;
-  }
+@media only screen and (max-height: 800px) {
   .activeS span img {
     min-height: 45vh;
     max-height: 45vh;
   }
 }
-
 @media only screen and (max-height: 500px) {
   .activeS span {
     width: 45vw;

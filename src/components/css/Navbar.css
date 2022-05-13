@@ -1,37 +1,29 @@
 @-webkit-keyframes moveInLeft {
   0% {
     opacity: 0;
-    -webkit-transform: translateX(-100px);
-            transform: translateX(-100px);
+    transform: translateX(-100px);
   }
   80% {
-    -webkit-transform: translateX(10px);
-            transform: translateX(10px);
+    transform: translateX(10px);
   }
   100% {
     opacity: 1;
-    -webkit-transform: translate(0);
-            transform: translate(0);
+    transform: translate(0);
   }
 }
-
 @keyframes moveInLeft {
   0% {
     opacity: 0;
-    -webkit-transform: translateX(-100px);
-            transform: translateX(-100px);
+    transform: translateX(-100px);
   }
   80% {
-    -webkit-transform: translateX(10px);
-            transform: translateX(10px);
+    transform: translateX(10px);
   }
   100% {
     opacity: 1;
-    -webkit-transform: translate(0);
-            transform: translate(0);
+    transform: translate(0);
   }
 }
-
 .navbar {
   width: 100%;
   height: 90px;
@@ -43,15 +35,9 @@
 
 .navbar .container {
   height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
   padding: 1rem;
 }
 
@@ -60,8 +46,6 @@
 }
 
 .navbar .nav-menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -89,13 +73,11 @@
   font-family: sans-serif;
   font-size: 18px;
   font-weight: 600;
-  -webkit-transition: .5s;
-  transition: .5s;
+  transition: 0.5s;
   z-index: 1;
 }
-
 .navbar .nav-menu li a:before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -103,42 +85,32 @@
   height: 100%;
   border-top: 2px solid #e86d32;
   border-bottom: 2px solid #e86d32;
-  -webkit-transform: scaleY(2);
-          transform: scaleY(2);
+  transform: scaleY(2);
   opacity: 0;
-  -webkit-transition: .3s;
-  transition: .3s;
+  transition: 0.3s;
 }
-
 .navbar .nav-menu li a:after {
-  content: '';
+  content: "";
   position: absolute;
   top: 2px;
   left: 0;
   width: 100%;
   height: 100%;
   background-color: #e86d32;
-  -webkit-transform: scale(0);
-          transform: scale(0);
+  transform: scale(0);
   opacity: 0;
-  -webkit-transition: .3s;
-  transition: .3s;
+  transition: 0.3s;
   z-index: -1;
 }
-
 .navbar .nav-menu li a:hover {
   color: #fff;
 }
-
 .navbar .nav-menu li a:hover:before {
-  -webkit-transform: scaleY(1);
-          transform: scaleY(1);
+  transform: scaleY(1);
   opacity: 1;
 }
-
 .navbar .nav-menu li a:hover:after {
-  -webkit-transform: scaleY(1);
-          transform: scaleY(1);
+  transform: scaleY(1);
   opacity: 1;
 }
 
@@ -146,37 +118,31 @@
   .hamburger {
     display: block;
   }
+
   .container {
     max-width: 100vw;
   }
+
   .navbar .nav-menu {
     position: absolute;
     right: 0;
     top: 90px;
     width: 0px;
     height: 91vh;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     overflow-x: hidden;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    background-color: white;
-    -webkit-transition: .6s ease-in-out;
-    transition: .6s ease-in-out;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    transition: 0.6s ease-in-out;
     z-index: 10;
     opacity: 1;
   }
   .navbar .nav-menu li a {
     font-size: 0.1px;
-    -webkit-transition: .6s ease-in-out;
-    transition: .6s ease-in-out;
+    transition: 0.6s ease-in-out;
   }
+
   .navbar .active {
     visibility: visible;
     width: 100vw;
@@ -185,16 +151,15 @@
     font-size: 3vh;
   }
 }
-
 @media screen and (max-width: 601px) {
   .navbar .nav-menu li {
     border: none;
   }
+
   .navbar .nav-menu li:first-child {
     margin-top: 12vh;
   }
 }
-
 @media screen and (max-width: 450px) {
   .navbar .container h1 {
     font-size: 7vw;

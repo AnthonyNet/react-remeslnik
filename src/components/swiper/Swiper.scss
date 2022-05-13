@@ -1,12 +1,15 @@
-.container {
-    .myswiper{
-        width: 100%;
-        .swiperslide{
-            img{
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-            }
-        }
-    }
+.swiper-slide{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    height: 70vh;
+    border: 3px solid red;
+    
+}
+
+.img{
+   height: 100%;
+   width: 100%; 
 }

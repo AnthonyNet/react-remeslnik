@@ -4,7 +4,7 @@ import Hero from './components/hero/Hero'
 import Featured from './components/featured/Featured'
 import Slider from './components/slider/Slider'
 import Swiper from './components/swiper/Swiper'
-
+import Pokus from './components/pokus/Slider'
 import Footer from './components/footer/Footer'
 
 import './App.scss';
@@ -25,12 +25,9 @@ function App() {
      <Footer />
       */}  
       
-      <Navbar />
-      <Hero />
-      <Featured /> 
-      <Slider />
-      
-     <Footer />
+      <Pokus />
+    
+     
     
     </div>
   );

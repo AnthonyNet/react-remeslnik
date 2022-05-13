@@ -1,46 +1,93 @@
 @-webkit-keyframes moveInLeft {
   0% {
     opacity: 0;
-    -webkit-transform: translateX(-100px);
-            transform: translateX(-100px);
+    transform: translateX(-100px);
   }
   80% {
-    -webkit-transform: translateX(10px);
-            transform: translateX(10px);
+    transform: translateX(10px);
   }
   100% {
     opacity: 1;
-    -webkit-transform: translate(0);
-            transform: translate(0);
+    transform: translate(0);
   }
 }
-
 @keyframes moveInLeft {
   0% {
     opacity: 0;
-    -webkit-transform: translateX(-100px);
-            transform: translateX(-100px);
+    transform: translateX(-100px);
   }
   80% {
-    -webkit-transform: translateX(10px);
-            transform: translateX(10px);
+    transform: translateX(10px);
   }
   100% {
     opacity: 1;
-    -webkit-transform: translate(0);
-            transform: translate(0);
+    transform: translate(0);
   }
 }
-
 .featured .coverLeft,
 .featured .coverRight {
-  display: -ms-grid;
+  margin: 0 auto;
   display: grid;
-  grid-gap: 1rem;
-  /*
-    max-height: 50vh;
-    min-height: 50vh;*/
-  margin-bottom: 100px;
+  width: 100%;
+  height: auto;
+  max-width: 1800px;
+}
+
+.coverLeft div,
+.coverRight div {
+  display: grid;
+}
+
+.featured .coverLeft {
+  grid-template-areas: "one one two three" "one one four five";
+}
+
+.featured .coverRight {
+  grid-template-areas: "three two one one" "five four one one";
+}
+
+.item-1 {
+  grid-area: one;
+}
+
+.item-2 {
+  grid-area: two;
+}
+
+.item-3 {
+  grid-area: three;
+}
+
+.item- {
+  grid-area: four;
+}
+
+.item-5 {
+  grid-area: five;
+}
+
+.coverLeft div,
+.coverRight div {
+  margin: 10px;
+  overflow: hidden;
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  border: 1px solid white;
+}
+
+.coverLeft div img,
+.coverRight div img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transform: scale(1);
+  transition: 0.6s ease;
+}
+.coverLeft div img:hover,
+.coverRight div img:hover {
+  transform: scale(1.1);
 }
 
 .featured h1 {
@@ -54,48 +101,71 @@
   margin-bottom: 1rem;
 }
 
-.featured .coverLeft {
-      grid-template-areas: "one two three" "one four five";
-  -ms-grid-columns: 1fr 20% 20%;
-      grid-template-columns: 1fr 20% 20%;
-  -ms-grid-rows: 1fr 50%;
-      grid-template-rows: 1fr 50%;
+@media screen and (max-width: 900px) {
+  .coverLeft div,
+.coverRight div {
+    margin: 3px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .featured .coverLeft,
+.featured .coverRight {
+    grid-template-areas: "one" "two" "three" "four" "five";
+  }
+
+  .smallImg,
+.bigImg {
+    height: 400px;
+  }
+}
+/*
+.bigImg{
+    max-width: 500px;
+    max-height: 500px;
+}*/
+/*
+.smallImg{
+    max-height: 250px;
+}*/
+/*
+.featured .coverLeft{
+    grid-template-areas: 
+    "one two three"
+    "one four five";
+    grid-template-columns: 1fr 20% 20%;
+    grid-template-rows: 1fr 50%;
 }
 
-.featured .coverRight {
-      grid-template-areas: "oneR twoR threeR" "fourR fiveR threeR";
-  -ms-grid-columns: 20% 20% 1fr;
-      grid-template-columns: 20% 20% 1fr;
-  -ms-grid-rows: 1fr 50%;
-      grid-template-rows: 1fr 50%;
+.featured .coverRight{
+    grid-template-areas: 
+        "oneR twoR threeR"
+        "fourR fiveR threeR";
+    grid-template-columns: 20% 20% 1fr;  
+    grid-template-rows: 1fr 50% ;
 }
 
 .coverLeft div,
-.coverRight div {
-  width: 100%;
-  height: 100%;
+.coverRight div{
+    //border: 1px solid red; 
+    width: 100%;
+    height: 100%;
 }
 
-.coverLeft .bigImg {
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 2;
-  -ms-grid-column: 1;
-  grid-area: one;
+.coverLeft .bigImg{
+    grid-area: one;
+
 }
 
-.coverRight .bigImg {
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 2;
-  -ms-grid-column: 3;
-  grid-area: threeR;
+.coverRight .bigImg{
+    grid-area: threeR;
 }
 
-.bigImg img {
-  min-height: 50vh;
-  max-height: 50vh;
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+.bigImg img{
+    min-height: 50vh;
+    max-height: 50vh;
+    transform: scale(1.1);
 }
+
 
 .container .coverLeft div:nth-child(2),
 .container .coverLeft div:nth-child(3),
@@ -104,119 +174,126 @@
 .container .coverRight div:nth-child(1),
 .container .coverRight div:nth-child(2),
 .container .coverRight div:nth-child(4),
-.container .coverRight div:nth-child(5) {
-  height: 24vh;
+.container .coverRight div:nth-child(5)
+{
+height:  24vh;
 }
 
 .coverLeft div,
-.coverRight div {
-  position: relative;
-  overflow: hidden;
-  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+.coverRight div{
+    position: relative;
+    overflow: hidden;
+    @include shadow;
+
+
+    & img{
+        width: 100%;
+        height: 101%;
+        object-fit: cover;
+
+        opacity: 1;
+        scale: 1;    
+
+     }
+    & .hoverText{
+        position: absolute;
+        top: 85%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        scale: 1.5;
+        z-index: -1;
+       }
+
+    &:before{
+        opacity: 0;
+    }   
+    &:after{
+        opacity:1;
+    }
+    &:hover{
+    cursor: pointer;
+    overflow: hidden;
+   @include shadowHero;
+    transition: .6s ease;
+        & img{
+        transform: scale(1.3);
+        opacity: 0.8;
+        transition: 700ms ease-in-out;
+
+        }
+
+    }
+
 }
 
-.coverLeft div img,
-.coverRight div img {
-  width: 100%;
-  height: 101%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  opacity: 1;
-  scale: 1;
-}
+   .coverLeft div:hover .hoverText,
+   .coverRight div:hover .hoverText{
+       z-index: 5;
+       transition: 1000ms ease-in-out;
+       scale: 1;
+   }
 
-.coverLeft div .hoverText,
-.coverRight div .hoverText {
-  position: absolute;
-  top: 85%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  scale: 1.5;
-  z-index: -1;
-}
+   @media screen and (max-width: 1265px) {
+       .bigImg h1{
+        font-size: 3vw;
+       }
+   }
 
-.coverLeft div:before,
-.coverRight div:before {
-  opacity: 0;
-}
 
-.coverLeft div:after,
-.coverRight div:after {
-  opacity: 1;
-}
-
-.coverLeft div:hover,
-.coverRight div:hover {
-  cursor: pointer;
-  overflow: hidden;
-  box-shadow: 0px 10px 5px 0px rgba(0, 0, 0, 0.75);
-  -webkit-box-shadow: 0px 10px 5px 0px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 0px 10px 5px 0px rgba(0, 0, 0, 0.75);
-  -webkit-transition: .6s ease;
-  transition: .6s ease;
-}
-
-.coverLeft div:hover img,
-.coverRight div:hover img {
-  -webkit-transform: scale(1.3);
-          transform: scale(1.3);
-  opacity: 0.8;
-  -webkit-transition: 700ms ease-in-out;
-  transition: 700ms ease-in-out;
-}
-
-.coverLeft div:hover .hoverText,
-.coverRight div:hover .hoverText {
-  z-index: 5;
-  -webkit-transition: 1000ms ease-in-out;
-  transition: 1000ms ease-in-out;
-  scale: 1;
-}
-
-@media screen and (max-width: 1265px) {
-  .bigImg h1 {
-    font-size: 3vw;
-  }
-}
 
 @media screen and (max-width: 906px) {
+
   .featured .coverLeft,
-  .featured .coverRight {
-    padding: 1rem;
-        grid-template-areas: "one one" "two three" "four five";
-    -ms-grid-columns: 50% 1fr;
-        grid-template-columns: 50% 1fr;
-    -ms-grid-rows: 50% 1fr 1fr;
-        grid-template-rows: 50% 1fr 1fr;
-  }
-  .coverRight .bigImg {
-    -ms-grid-row: 1;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 2;
-    grid-area: one;
-  }
+  .featured .coverRight{
+    padding: 1rem; 
+    grid-template-areas: 
+    "one one"
+    "two three"
+    "four five";
+    grid-template-columns: 50% 1fr;  
+    grid-template-rows: 50% 1fr 1fr ;
+    //padding: 1vh 1rem;
+    //margin-bottom: 20px;
+   }
+
+
+   .coverRight .bigImg{
+       grid-area: one;
+   }
+
+
 }
 
+
 @media only screen and (max-height: 750px) {
-  .featured .coverLeft,
-  .featured .coverRight {
-        grid-template-areas: "one";
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-  }
-  .container .smallImg {
+
+    .featured .coverLeft,
+    .featured .coverRight{
+        grid-template-areas:
+        "one"
+
+        ;
+        grid-template-columns:  1fr;
+
+
+    }
+
+  .container .smallImg
+    {
+
     min-height: 50vh;
     max-height: 50vh;
-  }
+    }
+
 }
 
 @media only screen and (max-height: 550px) {
-  .container .smallImg,
-  .bigImg img {
+    .container .smallImg,
+    .bigImg img
+    {
+
     min-height: 90vh;
     max-height: 90vh;
-  }
+    }
 }
+*/

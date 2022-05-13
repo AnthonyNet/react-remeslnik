@@ -44,7 +44,7 @@ import Kuchyn2 from '../../assets/kuchyne/2.jpg'
 import Kuchyn3 from '../../assets/kuchyne/3.jpg'
 import Kuchyn4 from '../../assets/kuchyne/4.jpg'
 import Kuchyn5 from '../../assets/kuchyne/5.jpg'
-import Kuchyn6 from '../../assets/kuchyne/6.jpg'
+//import Kuchyn6 from '../../assets/kuchyne/6.jpg'
 
 import Ostatni1 from '../../assets/ostatni/1.jpg'
 import Ostatni2 from '../../assets/ostatni/2.jpg'
@@ -171,7 +171,7 @@ const Slider = () => {
             <span> <img src={Kuchyn3} alt="" /></span>
             <span> <img src={Kuchyn4} alt="" /></span>
             <span> <img src={Kuchyn5} alt="" /></span>
-            <span> <img src={Kuchyn6} alt="" /></span>
+         
 
             </div>
           

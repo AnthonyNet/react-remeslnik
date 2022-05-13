@@ -32,9 +32,10 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #333;
   max-width: 100%;
-  
+  background-image: linear-gradient(to right, #434343 0%, rgb(44, 18, 148) 100%);
+  background-image: linear-gradient(to right, #434343 0%, #14b2d787 100%);
+  background-image: linear-gradient(to right, #141e30, #243b55);
 }
 
 .container{

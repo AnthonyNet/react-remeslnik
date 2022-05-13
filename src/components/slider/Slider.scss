@@ -1,6 +1,6 @@
 @import '../general.scss';
 
-
+/*
 
 a{
     color: white;
@@ -29,14 +29,12 @@ a{
 
 .gallery{
     display: none;
-    width: 100%;
+    width: 80vw;
+    height: 100vh;
 }
 
 .activeS{
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 1rem;
 }
 
 
@@ -144,4 +142,4 @@ a{
             max-height: 70vh;
         }
     }
-}
+}*/
