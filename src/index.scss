@@ -1,3 +1,9 @@
+$mainColor1: #39101b;
+$mainColor2: #150033;
+$white: white;
+
+$galleryTabs: #aa3e3e;
+
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,500&display=swap');
 
@@ -21,9 +27,12 @@ a{
 }
 h1{
   text-align: center;
-  
 }
 
+.featured h1,
+.featured h2{
+    color: #ec8080;
+}
 
 body {
   margin: 0;
@@ -33,9 +42,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   max-width: 100%;
-  background-image: linear-gradient(to right, #434343 0%, rgb(44, 18, 148) 100%);
-  background-image: linear-gradient(to right, #434343 0%, #14b2d787 100%);
-  background-image: linear-gradient(to right, #141e30, #243b55);
+  background-image: linear-gradient(to right, $mainColor1, $mainColor2);
 }
 
 .container{

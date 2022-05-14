@@ -17,15 +17,18 @@ h1 {
   text-align: center;
 }
 
+.featured h1,
+.featured h2 {
+  color: #ec8080;
+}
+
 body {
   margin: 0;
   font-family: "Open Sans", sans-serif, "Raleway", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   max-width: 100%;
-  background-image: linear-gradient(to right, #434343 0%, rgb(44, 18, 148) 100%);
-  background-image: linear-gradient(to right, #434343 0%, rgba(20, 178, 215, 0.5294117647) 100%);
-  background-image: linear-gradient(to right, #141e30, #243b55);
+  background-image: linear-gradient(to right, #39101b, #150033);
 }
 
 .container {
