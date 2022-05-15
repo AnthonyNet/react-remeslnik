@@ -85,6 +85,14 @@
    margin: 3px;
 }
 }
+@media screen and (max-width: 760px){
+    .featured h1{
+        font-size: 4.5vw;
+    }
+    .featured h2{
+        font-size: 4vw;
+    }
+}
 
 @media screen and (max-width: 600px){
     .featured .coverLeft,

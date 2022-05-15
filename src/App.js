@@ -20,11 +20,11 @@ function App() {
      <Navbar />
       <Hero />
       <Featured /> 
-      <Slider />
-      <Swiper />
       <Gallery />
      <Footer />
       */}  
+     
+    
      
       <Navbar />
       <Hero />

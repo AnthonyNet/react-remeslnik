@@ -2,7 +2,7 @@
 
 footer{
     background-image: linear-gradient(to bottom, #39101b, #150033);
-
+    height: 500px;
 }
 
 footer h1{
@@ -11,16 +11,13 @@ footer h1{
 }
 
 .footerCover{
-    margin-top: 5rem;
+    
     margin: 0 auto;
     display: flex;
     width: 100%;
-    height: 30vh;
+    min-height: 30vh;
     justify-content: center;
     align-items: center;
- 
-   
-   
 }
 
 .footerCover span{
@@ -48,7 +45,7 @@ footer h1{
         
     }
     footer h1{
-        margin-bottom: 20vh;
+        margin-bottom: 10vh;
         font-size: 50px;
     }
 
@@ -61,7 +58,19 @@ footer h1{
 @media screen and (max-width: 906px) {
     .footer span{
        margin-bottom: 1.5rem;
-        font-size: 6vw;
     }
+
+    .footerCover span p {
+        font-size: 4vw;
+    }
+
+}
+
+@media screen and (max-width: 520px) {
+   .footerCover{
+       height: 60vh;
+       flex-direction: column;
+       justify-content: space-around;
+   }
 
 }

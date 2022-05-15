@@ -4,6 +4,8 @@
 /* 
 MENU 
 */
+
+
 .containerSlider ul li {
     cursor: pointer;
     transition: 0.7s ease;
@@ -27,7 +29,9 @@ a {
 }*/
 
 .containerSlider{
-    height: 100vh;
+    width: 100vw;
+    min-height: 100vh;
+    border: 1px solid red;
 }
 .containerSlider ul {
   display: flex;
@@ -41,6 +45,7 @@ a {
 
 .gallery {
   display: none;
+  height: 100%;
   width: 100%;
 }
 
@@ -93,114 +98,9 @@ TABS
   object-fit: cover;
   background-color: $white;
 }
-/*
-@media only screen and (max-width: 980px) {
-    .containerSlider ul{
-        font-size: 2.8vw;
-    }
 
-    .hero h1{
-        font-size: 9.5vw;
-    }
-
-    .container h1,
-    .hero p{
+@media screen and (max-width: 760px){
+    .menu-tabs .tabs{
         font-size: 4vw;
     }
-
-    .containerSlider ul li{
-       
-        justify-content: space-between;
-    }
-
-    .activeS span{
-        width: 45vw;
-        & img{
-            min-height: 30vh;
-            max-height: 30vh;
-        }
-    }
 }
-
-
-
-@media only screen and (max-width: 980px) {
-    .containerSlider ul{
-        font-size: 2.8vw;
-    }
-
-    .hero h1{
-        font-size: 9.5vw;
-    }
-
-    .container h1,
-    .hero p{
-        font-size: 4vw;
-    }
-
-    .containerSlider ul li{
-       
-        justify-content: space-between;
-    }
-
-    .activeS span{
-        width: 45vw;
-        & img{
-            min-height: 30vh;
-            max-height: 30vh;
-        }
-    }
-}
-
-@media only screen and (max-width: 600px){
-
-   
-    .containerSlider ul{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        
-    }
-    .container ul li{
-       
-        text-align: right;
-        width: 100%;
-        text-align: center;
-        padding: 1rem;
-        font-size: 7vw;
-    }
-
-    .container ul li:last-child{
-        width: 100%;
-    }
-    .activeS span{
-        width: 90vw;
-        
-        & img{
-            min-height: 40vh;
-            max-height: 50vh;
-        }
-    }
-}
-
-@media only screen and (max-height: 800px) {
-
-    .activeS span{
-       
-        & img{
-            min-height: 45vh;
-            max-height: 45vh;
-        }
-    }
-}
-
-@media only screen and (max-height: 500px) {
-
-    .activeS span{
-        width: 45vw;
-        & img{
-            min-height: 70vh;
-            max-height: 70vh;
-        }
-    }
-}*/
