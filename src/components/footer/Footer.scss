@@ -1,7 +1,10 @@
-@import '../general.scss';
 
 footer{
-    background-image: linear-gradient(to bottom, #39101b, #150033);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
     height: 500px;
 }
 
@@ -15,7 +18,7 @@ footer h1{
     margin: 0 auto;
     display: flex;
     width: 100%;
-    min-height: 30vh;
+    min-height: 20vh;
     justify-content: center;
     align-items: center;
 }

@@ -25,9 +25,6 @@ function App() {
       */}  
      
     
-     
-      <Navbar />
-      <Hero />
       <Featured /> 
       <Gallery />
      <Footer />

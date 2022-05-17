@@ -35,7 +35,7 @@ const Featured = () => {
 
               </Bounce>
               <Bounce>
-              <h2>Obklady</h2>
+              <h2 className='highlight-margin'>Obklady</h2>
                  <div className="coverRight">
                   <div className="smallImg item-3"> <img  src={House7} alt='' /></div>
                   <div className="smallImg item-2 "> <img  src={House8} alt='' /></div>
