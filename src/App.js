@@ -24,7 +24,8 @@ function App() {
      <Footer />
       */}  
      
-    
+      <Navbar />
+      <Hero />
       <Featured /> 
       <Gallery />
      <Footer />
