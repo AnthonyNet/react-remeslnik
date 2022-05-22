@@ -13,6 +13,8 @@ const Footer = () => {
             <span><BsFillTelephoneFill /><p>775 789 789</p></span>
             <span> <BsFillEnvelopeFill /><p>janmarek@gmail.com</p></span>
         </div>
+
+        
        
         </footer>
    
