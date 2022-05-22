@@ -53,7 +53,7 @@ const Gallery = () => {
      {
       ostatni.map((item,index)=>{
         return(
-          <SwiperSlide className={styles.swiperslide}>
+          <SwiperSlide className={styles.swiperslide} key={index}>
         <span className='img-cover'><img className='img' src={item} /></span>
         </SwiperSlide> 
         )

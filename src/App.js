@@ -6,6 +6,7 @@ import Featured from './components/featured/Featured'
 
 import Gallery from './components/gallery/Gallery'
 import Footer from './components/footer/Footer'
+import Form from './components/form/Form'
 
 import './App.scss';
 
@@ -24,10 +25,8 @@ function App() {
      <Footer />
       */}  
      
-      <Navbar />
-      <Hero />
-      <Featured /> 
-      <Gallery />
+     
+     <Form />
      <Footer />
      
     

@@ -3,9 +3,10 @@ footer{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
-
-    height: 500px;
+    justify-content: space-between;
+    margin: 2rem;
+    height: 300px;
+  
 }
 
 footer h1{
@@ -21,6 +22,7 @@ footer h1{
     min-height: 20vh;
     justify-content: center;
     align-items: center;
+  
 }
 
 .footerCover span{
@@ -59,21 +61,25 @@ footer h1{
 }
 
 @media screen and (max-width: 906px) {
-    .footer span{
-       margin-bottom: 1.5rem;
-    }
-
+  
     .footerCover span p {
         font-size: 4vw;
     }
 
 }
 
-@media screen and (max-width: 520px) {
+@media screen and (max-width: 660px) {
+  footer{
+      height: auto;
+    }
+
    .footerCover{
-       height: 60vh;
        flex-direction: column;
-       justify-content: space-around;
+       
+   }
+
+   .footerCover span{
+       margin: 1rem;
    }
 
 }

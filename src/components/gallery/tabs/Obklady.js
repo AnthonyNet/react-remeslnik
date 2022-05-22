@@ -38,7 +38,7 @@ const Obklady = () => {
      {
       obklady.map((obklad, index)=>{
         return(
-          <SwiperSlide className={styles.swiperslide}>
+          <SwiperSlide className={styles.swiperslide} key={index}>
         <span key={index} className='img-cover'><img className='img' src={obklad} /></span>
         </SwiperSlide> 
         )
