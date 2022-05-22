@@ -1,3 +1,5 @@
+@import '../../index.scss';
+
 .contact-in{
    display: flex;
 
@@ -80,7 +82,11 @@
     cursor: pointer;
     font-size: 110%;
     font-weight: 700;
-    
+    background-image: linear-gradient(to right, $mainColor1, $mainColor2);
+    transition: 0.7s ease;
+    &:hover{
+    transform: scale(1.1);
+    }
 }
 
 @media screen and (max-width: 880px){
