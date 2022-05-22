@@ -25,7 +25,10 @@ function App() {
      <Footer />
       */}  
      
-     
+      <Navbar />
+      <Hero />
+      <Featured /> 
+      <Gallery />
      <Form />
      <Footer />
      
