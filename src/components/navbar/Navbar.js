@@ -25,7 +25,8 @@ const Navbar = () => {
                 <li><Link onClick={handleClick} >Domů</Link></li>
                 <li><Link onClick={handleClick} to="featured" smooth={true} offset={50} duration={500}>Hotová díla</Link></li>
                 <li><Link onClick={handleClick} to="slider" smooth={true} offset={50} duration={500}>Galerie</Link></li>
-                
+
+                <li><Link onClick={handleClick} to="contact-in" smooth={true} offset={50} duration={500}>Kontakt</Link></li>
             </ul>
         
             <div className="hamburger" onClick={handleClick}>
