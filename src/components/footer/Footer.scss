@@ -61,17 +61,15 @@ footer h1{
 }
 
 @media screen and (max-width: 906px) {
-  
+    
     .footerCover span p {
         font-size: 4vw;
     }
 
 }
 
-@media screen and (max-width: 660px) {
-  footer{
-      height: auto;
-    }
+@media screen and (max-width: 725px) {
+
 
    .footerCover{
        flex-direction: column;

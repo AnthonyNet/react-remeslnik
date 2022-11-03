@@ -14,6 +14,7 @@
 }
 
 .navbar .container{
+   
     height: 100%;
     display: flex;
     justify-content: space-between;
@@ -138,7 +139,7 @@
            
         
             & li a{
-                font-size: 3vh;
+                font-size: 1.5em;
             }
            
         }
@@ -159,3 +160,29 @@
         }
     }
     
+    @media screen and (max-height:700px){
+        .navbar .container{
+            padding: 0;
+        }
+        
+
+        .navbar .container .nav-menu li{
+            margin-top: 0;
+            margin: 3vh;
+           }
+      
+
+        .navbar .nav-menu li a{
+            margin:  0;
+            
+        }
+    }
+
+    @media screen and (max-height:500px){
+        .navbar .container .nav-menu li{
+           margin: 1vh;
+           padding: 0;
+           }
+
+          
+    }
